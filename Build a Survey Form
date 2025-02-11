@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>freeCodeCamp Survey Form</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  
+<h1 id="title">freeCodeCamp Survey Form</h1>
+
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+<form id="survey-form">
+
+
+ <label id="name-label">Name <input id="name" type="text" name="survey-form" placeholder="Enter your name" required/></label>
+    
+    
+
+ <label id="email-label">Email <input id="email" type="email" name="survey-form" placeholder="Enter your email" required/></label>
+
+
+ <label id="number-label">Age <input id="number" type="number" name="survey-form" min="10" max="120" placeholder="Age"/>
+
+<label>Which option best describes your current role?</label>
+
+<select id="dropdown" name="current-role">
+<option value="">(select one)</option>
+<option value="1">Student</option>
+<option value="2">Full time job</option>
+<option value="3">Part time job</option>
+</select>
+
+<label>Would you recommend freeCodeCamp to a friend?</label>
+
+<legend>
+<input type="radio" id="yes" name="yes-no" class="inline" value="Yes" checked>Yes</legend>
+
+<legend><input type="radio" id="no" name="yes-no" class="inline" value="No">No</legend>
+
+<label>What is your favorite feature of freeCodeCamp?</label>
+
+<select id="dropdown" name="dropdown">
+  <option value="">Select one</option>
+  <option value="1">Challenges</option>
+  <option value="2">Projects</option>
+  <option value="3">Community</option>
+</select>
+
+<label>What would you like to see improved?<p class="check">(check all that apply)</p></label>
+
+<input type="checkbox" id="checkbox"  value="front-end" name="survey-form" class="inline"> Front End Projects
+
+<input type="checkbox" id="checkbox" value="back-end" name="survey-form" class="inline"> Back End Projects/>
+  
+
+<label for="comments">Any comments or suggestions?</label>
+
+<textarea value="comments" id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+
+<input id="submit" type="submit" value="Submit"/>
+</form>
+</body>
+
+</html>
